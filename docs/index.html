@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civic Connect - Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .login-container {
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+        }
+        img {
+            max-width: 100px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="data:image/jpeg;base64,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" alt="Civic Connect Logo">
+        <h2>Civic Connect - Login</h2>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="text" id="aadhaar" placeholder="DigiLocker/Aadhaar Number" required>
+        <button onclick="validateLogin()">Login</button>
+        <p id="message" style="color: red;"></p>
+    </div>
+
+    <script>
+        function validateLogin() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var aadhaar = document.getElementById("aadhaar").value;
+            var message = document.getElementById("message");
+
+            if (email === "demo@civicconnect.com" && password === "demo123" && aadhaar === "123456789012") {
+                alert("Login Successful!");
+                window.location.href = "file:///C:/Users/Vinod/Downloads/civic-connect/last4.html";
+            } else {
+                message.textContent = "Invalid login details. Try again.";
+            }
+        }
+    </script>
+</body>
+</html>
